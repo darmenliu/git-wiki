@@ -1,11 +1,13 @@
 # GDB
 
+guide: https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/gdb.html
+
+
+
 docker里面生成coredump时需要在宿主机里面修改内核参数
 ulimit -c unlimited
 echo 1 > /proc/sys/kernel/core_uses_pid
 echo "/tmp/corefile-%e-%p-%t" > /proc/sys/kernel/core_pattern
-
-
 
 
 
